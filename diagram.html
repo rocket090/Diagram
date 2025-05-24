@@ -3,81 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>ダイヤグラム表示</title>
   <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script src="script.js"></script>
-  <style>
-    body { 
-      font-family: 'Arial', sans-serif; 
-      text-align: center; 
-      background-color: #f4f4f4; 
-      color: #333; 
-    }
-    h1 { 
-      color: #222; 
-    }
-    /* コンテナ：ファイルアップロードとダイヤグラムを内包 */
-    .upload-container,.table-container{ 
-      background: white; 
-      padding: 30px; 
-      margin: 20px auto; 
-      width: 80%; 
-      max-width: 900px;  
-      border-radius: 10px; 
-      box-shadow: 0 0 10px rgba(0,0,0,0.1); 
-    }
-    .table-container {
-      overflow-x: auto; /* または scroll */
-    }
-    .th, .td {
-      border:1px solid #333;
-    }
-    /* カスタムファイル選択ボタン */
-    .custom-file-button {
-      margin: 3px;
-      padding: 10px;
-      font-size: 16px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      background: #cccccc;
-      color: black;
-      display: inline-block;
-    }
-    /* SVGはコンテナ内で横幅いっぱいに表示（レスポンシブ対応） */
-    #chart {
-      width: 100%;
-      display: block;
-    }
-    /* 凡例（小さめ） */
-    .legend {
-      display: flex;
-      justify-content: center;
-      margin-top: 10px;
-    }
-    .legend-item {
-      display: flex;
-      align-items: center;
-      margin: 0 5px;
-      cursor: pointer;
-      font-size: 12px;
-    }
-    .legend-color {
-      width: 15px;
-      height: 7px;
-      margin-right: 3px;
-    }
-    .tooltip {
-      position: absolute;
-      background: white;
-      border: 1px solid #ccc;
-      padding: 8px;
-      display: none;
-      font-size: 12px;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-      border-radius: 5px;
-    }
-  </style>
 </head>
 <body>
   <div class="upload-container">
@@ -98,4 +26,5 @@
     <table id="csvTable" style="font-size: 12px; width: auto;"></table>
   </div>
 </body>
+<script src="script.js"></script>
 </html>
